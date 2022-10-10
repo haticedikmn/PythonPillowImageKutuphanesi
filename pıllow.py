@@ -1,15 +1,18 @@
 import os
-
-from PIL import Image
 import PIL
+from PIL import Image
 
-img = Image.open(r'C:\Users\Casper\PycharmProjects\Miuul\dss.jpg')
+img = Image.open(r'C:\Users\Casper\PycharmProjects\projects\dss.jpg')
 img.show()
 
+img.filename
+#dosya adını gösterir.
 img.size
 #boyutlarını yazdırır
-
 img.mode
+#piksel formatını getirir.
+img.format
+#dosya formatını gösterir.
 
 img.rotate(90, expand=1).show()
 #90 derece çevirir
@@ -28,6 +31,7 @@ new_height =int(height/3)
 new_height
 small_image = img.resize((new_width, new_height)).show()
 #orantılı bir şekilde fotograf boyutunu küçültmeye yarar.
+
 
 folder_path =(r'C:\Users\Casper\PycharmProjects\images')
 paths = os.listdir(folder_path)
