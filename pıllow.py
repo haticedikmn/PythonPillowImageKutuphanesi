@@ -29,8 +29,6 @@ new_height
 small_image = img.resize((new_width, new_height)).show()
 #orantılı bir şekilde fotograf boyutunu küçültmeye yarar.
 
-import os
-
 folder_path =(r'C:\Users\Casper\PycharmProjects\images')
 paths = os.listdir(folder_path)
 #image klasörü altındaki bütün jpg dosylarını getiriyor.
